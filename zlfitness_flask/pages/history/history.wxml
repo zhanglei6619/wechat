@@ -1,0 +1,18 @@
+<!--history.wxml-->
+<button bindtap="tableToExcel2">一键导出excel</button>
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">日期</view>
+    <view class="th">锻炼项目</view>
+    <view class="th">每组次数</view>
+    <view class="th">锻炼小结</view>
+  </view>
+  <block wx:for="{{getdata}}" wx:for-index="idx" wx:key="key">
+    <view class="tr" bindlongtap="bingLongTap" id = "{{getdata[idx].note1}}">
+      <view class="td">{{getdata[idx].date}}</view>
+      <view class="td">{{getdata[idx].project}}</view>
+      <view class="td">{{getdata[idx].group}}</view>
+      <view class="td">{{getdata[idx].summary}}</view>
+    </view>
+  </block>
+</view>

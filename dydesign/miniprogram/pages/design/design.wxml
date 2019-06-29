@@ -1,0 +1,72 @@
+<!--miniprogram/pages/design/design.wxml-->
+<!-- <web-view src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/dyaqhsj.html"></web-view> -->
+<import src="../../wxParse/wxParse.wxml" />
+<!-- <view class="hr"></view> -->
+<view class="nav">
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/1.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' bindtap='sy'>
+      </button>
+    </view>
+    <view>
+      首页
+    </view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/2.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' bindtap='qj'>
+      </button>
+    </view>
+    <view>
+      全景效果图
+    </view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/3.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' open-type='contact'>
+      </button>
+    </view>
+    <view>
+      在线客服
+    </view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/4.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' bindtap='fw'>
+      </button>
+    </view>
+    <view>
+      服务类型
+    </view>
+  </view>
+</view>
+<!-- 户型图 -->
+<view class="line"></view>
+<view style='text-align: center'>720全景效果图（点击播放）</view>
+<!-- <view class="line"></view> -->
+<view class="order">A户型: 撞色现代风格 | 青春华尔兹</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/A720.jpg" class="img" mode="widthFix" bindtap='atype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">B户型: 北欧风格 | 如沐春风</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/B720.jpg" class="img" mode="widthFix" bindtap='btype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">C户型: 简约美式 | 轻奢小资</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/C720.jpg" class="img" mode="widthFix" bindtap='ctype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">D户型: 工业风格 | 时光记忆</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/D720.jpg" class="img" mode="widthFix" bindtap='dtype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">E户型: 地中海风格 | 蓝调布鲁斯</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/E720.jpg" class="img" mode="widthFix" bindtap='etype'></image>
+<!-- 底部说明 -->
+<view class="line"></view>
+<view style='text-align: center;'>服务说明</view>
+
+<view class="order">查看全景效果：单击对应户型图片，播放720全景视频</view>
+<view class="order">联系客服：单击右侧或顶部在线客服图标，预约定制装修方案，获取报价</view>
+
+<!-- 侧边栏 -->
+<button class="tel-click" bindtap='calling'>
+</button>
+<button class="wechat-click" open-type='contact'>
+</button>

@@ -1,0 +1,71 @@
+<!-- <import src="../../wxParse/wxParse.wxml" /> -->
+<!-- <view class="hr"></view> -->
+<view class="nav">
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/1.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' bindtap='sy'>
+      </button>
+    </view>
+    <view>
+      首页
+    </view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/2.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' bindtap='qj'>
+      </button>
+    </view>
+    <view>
+      全景效果图
+    </view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/3.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' open-type='contact'>
+      </button>
+    </view>
+    <view>
+      在线客服
+    </view>
+  </view>
+  <view class="nav-item">
+    <view>
+      <button style="background-image:url('https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/4.png');width:3.7rem;height:3.7rem;background-size:3.5rem 3.5rem;background-repeat:no-repeat;border:none;" plain='true' bindtap='fw'>
+      </button>
+    </view>
+    <view>
+      服务类型
+    </view>
+  </view>
+</view>
+
+<!-- 户型图 -->
+<view class="line"></view>
+<view style='text-align: center;'>爱琴海户型图（点击查看）</view>
+<!-- <view class="line"></view> -->
+<view class="order">A户型: 套内面积22.14</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Atype.jpg" class="img" bindtap='atype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">B户型: 套内面积27.92</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Btype.jpg" class="img" bindtap='btype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">C户型: 套内面积43.38</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Ctype.jpg" class="img" mode="widthFix" bindtap='ctype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">D户型: 套内面积41.27</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Dtype.jpg" class="img" mode="widthFix" bindtap='dtype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">E户型: 套内面积39.27</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Etype.jpg" class="img" mode="widthFix" bindtap='etype'></image>
+<!-- 底部说明 -->
+<view class="line"></view>
+<view style='text-align: center;'>服务说明</view>
+
+<view class="order">查看户型图：单击对应户型图，查看大图，长按保存；单击退回主界面</view>
+<view class="order">联系客服：单击右侧或顶部在线客服图标，预约定制装修方案，获取报价</view>
+
+<!-- 侧边栏 -->
+<button class="tel-click" bindtap='calling'>
+</button>
+<button class="wechat-click" open-type='contact'>
+</button>

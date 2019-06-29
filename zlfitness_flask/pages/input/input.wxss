@@ -1,0 +1,22 @@
+/**index.wxss**/
+.btnGroup{
+    display:flex;
+    flex-direction:row;
+}
+
+.item{
+    width:160rpx;
+    min-height:10rpx;
+    margin:10rpx;
+    text-align:center;
+    line-height:50rpx;
+    display:inline-block;
+}
+
+.navigator-hover {
+    color:blue;
+}
+
+.hide{
+    display:none
+}

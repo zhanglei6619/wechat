@@ -1,0 +1,29 @@
+<view class="line"></view>
+<view style='text-align: center;'>爱琴海项目服务（点击查看）</view>
+<!-- <view class="line"></view> -->
+<view class="order">A户型: 套内面积22.14</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Atype.jpg" class="img" bindtap='atype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">B户型: 套内面积27.92</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Btype.jpg" class="img" bindtap='btype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">C户型: 套内面积43.38</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Ctype.jpg" class="img" mode="widthFix" bindtap='ctype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">D户型: 套内面积41.27</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Dtype.jpg" class="img" mode="widthFix" bindtap='dtype'></image>
+<!-- <view class="line"></view> -->
+<view class="order">E户型: 套内面积39.27</view>
+<image src="https://dydesign-1251059125.cos.ap-chongqing.myqcloud.com/img/Etype.jpg" class="img" mode="widthFix" bindtap='etype'></image>
+<!-- 底部说明 -->
+<view class="line"></view>
+<view style='text-align: center;'>服务说明</view>
+
+<view class="order">查看设计图：单击对应户型图片，查看设计图和服务项目</view>
+<view class="order">联系客服：单击右侧或顶部在线客服图标，预约定制装修方案，获取报价</view>
+
+<!-- 侧边栏 -->
+<button class="tel-click" bindtap='calling'>
+</button>
+<button class="wechat-click" open-type='contact'>
+</button>

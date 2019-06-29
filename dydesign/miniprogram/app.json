@@ -1,0 +1,21 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/design/design",
+    "pages/services/services",
+    "pages/A720/A720",
+    "pages/B720/B720",
+    "pages/C720/C720",
+    "pages/D720/D720",
+    "pages/E720/E720"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "隆鑫爱琴海",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

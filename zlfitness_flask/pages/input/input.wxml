@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="body-view">
+    <text name="Date">当前日期：{{datenow}}</text>
+  </view>
+
+  <view class="weui-cells__title">锻炼内容</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="input" placeholder="录入锻炼内容：" value="{{inputproj}}" placeholder-style="color: red" bindinput="inputno1" name="Project" />
+        </view>
+      </view>
+    </view>
+
+  <view class="weui-flex">
+    <view class="weui-flex__item" bindtap="clickButton" id="{{id1}}">俯卧撑</view>
+    <view class="weui-flex__item" bindtap="clickButton" id="{{id2}}">引体向上</view>
+    <view class="weui-flex__item" bindtap="clickButton" id="{{id3}}">深蹲</view>
+  </view>
+  <view class="weui-flex">
+    <view class="weui-flex__item" bindtap="clickButton" id="{{id4}}">举腿</view>
+    <view class="weui-flex__item" bindtap="clickButton" id="{{id5}}">桥</view>
+    <view class="weui-flex__item" bindtap="clickButton" id="{{id6}}">有氧运动</view>
+  </view>
+  
+  <view class="{{showflag1===0?'hide':'weui-cells__title'}}">第1组次数</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+              <input class="{{showflag1===0?'hide':'weui-input'}}" type="number"  bindinput="inputno2" placeholder-style="color: red" placeholder="录入第1组次数：" value="{{inputnum1}}" name="Group1" />
+          </view>
+      </view>
+  </view>  
+ 
+  <view class="{{showflag2===0?'hide':'weui-cells__title'}}">第2组次数</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+              <input class="{{showflag2===0?'hide':'weui-input'}}" type="number"  bindinput="inputno3" placeholder="录入第2组次数：" value="{{inputnum2}}" name="Group2" />
+          </view>
+      </view>
+  </view>  
+
+  <view class="{{showflag3===0?'hide':'weui-cells__title'}}">第3组次数</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+              <input class="{{showflag3===0?'hide':'weui-input'}}" type="number"  bindinput="inputno4" placeholder="录入第3组次数：" value="{{inputnum3}}" name="Group3" />
+          </view>
+      </view>
+  </view>  
+  
+  <view class="{{showflag4===0?'hide':'weui-cells__title'}}">第4组次数</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+              <input class="{{showflag4===0?'hide':'weui-input'}}" type="number"  placeholder="录入第4组次数：" value="{{inputnum4}}" name="Group4" />
+          </view>
+      </view>
+  </view>  
+
+
+  <view class="{{showflagxj===0?'hide':'weui-cells__title'}}">锻炼小结</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+              <input class="{{showflagxj===0?'hide':'weui-input'}}" type="text"  placeholder="录入锻炼小结：" value="{{inputxj}}" name="Summary" />
+          </view>
+      </view>
+  </view>  
+
+  <view class="page__bd page__bd_spacing">
+    <button class="weui-btn" form-type="submit" type="primary" disabled="{{showflagbt===0?'true':''}}"> 提交</button>
+  </view>
+
+</form>
+<text> \n </text>
+
+<view class="weui-flex">
+  <view class="weui-flex__item"> <navigator url="../history/history?period=all" hover-class="navigator-hover">汇总记录</navigator> </view>
+  <view class="weui-flex__item"><navigator url="../history/history?period=month" hover-class="navigator-hover">本月记录</navigator></view>
+  <view class="weui-flex__item"><navigator url="../history/history?period=week" hover-class="navigator-hover">本周记录</navigator></view>
+</view>
